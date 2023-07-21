@@ -34,8 +34,7 @@ public class MainViewModelImpl extends ViewModel implements MainViewModel {
 
     private void getAllSchools() {
         schoolRepository.getAllSchools(result -> schoolListUiState
-                .setValue(new SchoolListUiState(false, result))
-        );
+                .setValue(new SchoolListUiState(false, result)));
     }
 
     @Override

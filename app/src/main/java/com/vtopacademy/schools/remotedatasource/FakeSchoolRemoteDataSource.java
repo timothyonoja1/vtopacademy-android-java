@@ -5,7 +5,7 @@ import com.vtopacademy.schools.School;
 import java.util.List;
 import javax.inject.Inject;
 
-/** Fake Category remote data source implementation class. Used for unit testing */
+/** Fake School remote data source implementation class. Used for unit testing */
 public class FakeSchoolRemoteDataSource implements SchoolRemoteDataSource {
 
     /** Constructs a new instance. */

@@ -37,9 +37,9 @@ public class SchoolRemoteDataSourceImpl implements SchoolRemoteDataSource {
     }
 
     private List<School> convertToSchools(List<SchoolResponse> schoolResponses) {
-        List<School> schools = new ArrayList<>();;
+        List<School> schools = new ArrayList<>();
+        Date todaysDate = new Date();
         for (SchoolResponse schoolResponse : schoolResponses) {
-            Date todaysDate = new Date();
             School school = new School(schoolResponse.getSchoolID(),
                     schoolResponse.getNumber(), schoolResponse.getName());
             school.setDateSavedToLocalDatabase(todaysDate);
